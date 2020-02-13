@@ -5,9 +5,11 @@
 </template>
 
 <script>
+import { provideStore } from "./composition/use-store";
+
 export default {
-  setup() {
-    return {};
+  setup(_, { root: { $store } }) {
+    provideStore($store);
   },
   name: "App"
 };
