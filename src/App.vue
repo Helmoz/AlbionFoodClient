@@ -5,12 +5,12 @@
 </template>
 
 <script>
-import { provideStore } from "./composition/use-store";
+import { provideStore } from './composition/use-store'
 
 export default {
   setup(_, { root: { $store } }) {
-    provideStore($store);
+    provideStore($store)
   },
-  name: "App"
-};
+  name: 'App'
+}
 </script>

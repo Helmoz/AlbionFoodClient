@@ -20,9 +20,9 @@
 
 <script>
 export default {
-  name: "MainLayout",
+  name: 'MainLayout',
   setup() {
-    return {};
+    return {}
   }
-};
+}
 </script>

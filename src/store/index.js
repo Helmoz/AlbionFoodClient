@@ -1,9 +1,9 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-import craftSettings from "./craft-settings";
+import craftSettings from './CraftSettings'
 
-Vue.use(Vuex);
+Vue.use(Vuex)
 
 export default function(/* { ssrContext } */) {
   const Store = new Vuex.Store({
@@ -11,7 +11,7 @@ export default function(/* { ssrContext } */) {
       craftSettings
     },
     strict: process.env.DEV
-  });
+  })
 
-  return Store;
+  return Store
 }
