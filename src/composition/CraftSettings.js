@@ -1,27 +1,22 @@
-import { computed } from '@vue/composition-api'
+import { reactive } from '@vue/composition-api'
+import { getter } from '../utils/storeGetter'
 
 export function useCraftSettings(store) {
-  const city = computed({
-    get: () => store.state.craftSettings.city,
-    set: value => store.commit('craftSettings/setCity', value)
+  const state = reactive({
+    city: getter(store, 'craftSettings', 'city', 'setCity'),
+    focusUsage: getter(store, 'craftSettings', 'focusUsage', 'setFocusUsage'),
+    focusPoints: getter(store, 'craftSettings', 'focusPoints', 'setFocusPoints'),
+    itemsCount: getter(store, 'craftSettings', 'itemsCount', 'setItemsCount', () => {
+      if (store.state.craftSettings.focusUsage) {
+        return Math.floor(
+          store.state.craftSettings.focusPoints /
+            store.state.foodType.foodItem.craftingrequirements.craftingfocus
+        )
+      }
+      return store.state.craftSettings.itemsCount
+    })
   })
-  const focusUsage = computed({
-    get: () => store.state.craftSettings.focusUsage,
-    set: value => store.commit('craftSettings/setFocusUsage', value)
-  })
-  const focusPoints = computed({
-    get: () => store.state.craftSettings.focusPoints,
-    set: value => store.commit('craftSettings/setFocusPoints', value)
-  })
-  const itemsCount = computed({
-    get: () => store.state.craftSettings.itemsCount,
-    set: value => store.commit('craftSettings/setItemsCount', value)
-  })
-
   return {
-    city,
-    focusUsage,
-    focusPoints,
-    itemsCount
+    state
   }
 }
