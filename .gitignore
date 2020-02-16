@@ -33,3 +33,6 @@ debug.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+/src/store/store-flag.d.ts
+/package-lock.json

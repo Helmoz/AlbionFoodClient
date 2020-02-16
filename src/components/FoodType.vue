@@ -1,27 +1,16 @@
 <template>
-  <q-card square bordered flat style="margin-top: -1px">
-    <q-card-section>
-      <div class="row q-gutter-md items-center">
-        <div class="col-xs-12 col-sm-3">
-          <q-select outlined v-model="state.foodType" :options="foodOptions" label="Категория" />
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <q-select
-            outlined
-            v-model="state.foodItem"
-            option-value="uniquename"
-            :options="state.foodItems"
-            option-label="uniquename"
-            label="Предмет"
-          />
-        </div>
-      </div>
-    </q-card-section>
-  </q-card>
+  <div class="row q-gutter-md items-center">
+    <div class="col-xs-12 col-sm-3">
+      <q-select outlined v-model="foodType" :options="foodOptions" label="Категория" />
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <q-select outlined v-model="foodItem" option-value="uniquename" :options="foodItems" option-label="uniquename" label="Предмет" />
+    </div>
+  </div>
 </template>
 
 <script>
-import { useStore } from '../composition/use-store'
+import { useStore } from '../composition/useStore'
 
 import { useFoodType } from '../composition/FoodType'
 

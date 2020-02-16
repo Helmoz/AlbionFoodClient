@@ -2,28 +2,28 @@ import { reactive, toRefs } from '@vue/composition-api'
 
 export function useApi(url, options = {}) {
   const state = reactive({
-    data: null,
-    loading: ''
+    data: null
   })
 
   const initFetch = async () => {
     try {
-      state.loading = true
-      const response = await fetch(url)
+      const response = await fetch(url, {
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        }
+      })
       const data = await response.json()
       state.data = data[0]
-      state.loading = false
     } catch (error) {
       console.log(error)
-      state.data = 'error'
-      state.loading = false
     }
   }
 
   initFetch()
 
   return {
-    ...toRefs(state),
-    initFetch
+    ...toRefs(state)
   }
 }

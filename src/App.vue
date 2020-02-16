@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { provideStore } from './composition/use-store'
+import { provideStore } from './composition/useStore'
 
 export default {
   setup(_, { root: { $store } }) {
