@@ -2,13 +2,15 @@ import { reactive, computed, watch, toRefs } from '@vue/composition-api'
 
 import { useApi } from './useApi'
 
+import { getter } from '../utils/storeGetter'
 import { getDefaultChart, groupSelector, countPriceSelector } from '../utils/chart'
 
 import linqer from '@siderite/linqer'
 
-export function useFoodItemChart(store, foodItem) {
+export function useFoodItemChart(store) {
   const data = reactive({
     historyData: null,
+    foodItem: getter(store, 'foodType', 'foodItem', 'setFoodItem'),
     option: computed(() => {
       let chart = getDefaultChart()
 
@@ -40,12 +42,12 @@ export function useFoodItemChart(store, foodItem) {
     })
   })
 
-  watch([() => foodItem.value.uniquename, () => store.state.craftSettings.city], () => {
+  watch([() => data.foodItem.uniquename, () => store.state.craftSettings.city], () => {
     let currentDate = new Date()
     currentDate.setDate(currentDate.getDate() - 14)
     let formattedDate = currentDate.toISOString().substring(0, 10)
     const { data: historyData } = useApi(
-      `https://www.albion-online-data.com/api/v2/stats/history/${foodItem.value.uniquename}?locations=${store.state.craftSettings.city}&date=${formattedDate}&time-scale=6`
+      `https://www.albion-online-data.com/api/v2/stats/history/${data.foodItem.uniquename}?locations=${store.state.craftSettings.city}&date=${formattedDate}&time-scale=6`
     )
     data.historyData = historyData
   })

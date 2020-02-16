@@ -1,15 +1,14 @@
-export function getTimeAgo(sourceDate) {
-  let date = new Date(sourceDate)
-  var date_utc = Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds())
-
-  let now = new Date()
-  var dateUtc = new Date(date_utc)
-  let tdelta = new Date(now - dateUtc).getTime() / 1000
+export function getTimeAgo(sDate) {
+  sDate = new Date(sDate)
+  let sourceDateUTC = Date.UTC(sDate.getFullYear(), sDate.getMonth(), sDate.getDate(), sDate.getHours(), sDate.getMinutes(), sDate.getSeconds())
+  let nowUTC = new Date()
+  sourceDateUTC = new Date(sourceDateUTC)
+  let tdelta = new Date(nowUTC - sourceDateUTC).getTime() / 1000
 
   let timeString = ''
 
-  var decCache = [],
-    decCases = [2, 0, 1, 1, 1, 2]
+  let decCache = []
+  let decCases = [2, 0, 1, 1, 1, 2]
   function decOfNum(number, titles) {
     if (!decCache[number]) decCache[number] = number % 100 > 4 && number % 100 < 20 ? 2 : decCases[Math.min(number % 10, 5)]
     return titles[decCache[number]]

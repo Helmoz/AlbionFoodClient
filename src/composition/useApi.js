@@ -1,6 +1,6 @@
 import { reactive, toRefs } from '@vue/composition-api'
 
-export function useApi(url, options = {}) {
+export function useApi(url) {
   const state = reactive({
     data: null
   })
