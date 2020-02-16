@@ -18,6 +18,7 @@ export function useFoodItemChart(store) {
         const grouped = linqer.Enumerable.from(data.historyData.data)
           .groupBy(x => groupSelector(x.timestamp))
           .select(item => countPriceSelector(item))
+          .skipLast(1)
           .toList()
 
         chart.xAxis.data = grouped.select(x => x.key).toArray()

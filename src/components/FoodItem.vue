@@ -1,28 +1,26 @@
 <template>
-  <div>
-    <q-item class="q-pa-none">
-      <q-item-section top class="col-xs-2">
-        <div class="text-h5 text-dark q-pl-sm">{{ foodItem.uniquename }}</div>
-        <FoodItemImage :foodItemImage="foodItemImage" :size="150" />
-      </q-item-section>
-      <q-item-section top class="col-xs-3 q-mt-xl">
-        <FoodItemPrice
-          :label="`Минимальная цена продажи`"
-          :price="minimalSellPrice"
-          :date="minimalSellPriceDate"
-        />
-        <FoodItemPrice
-          :label="`Максимальная цена покупки`"
-          :price="maximumBuyPrice"
-          :date="maximumBuyPriceDate"
-          class="q-mt-md"
-        />
-      </q-item-section>
-      <q-item-section>
-        <FoodItemChart />
-      </q-item-section>
-    </q-item>
-  </div>
+  <q-item class="q-pa-none">
+    <q-item-section top class="col-xs-2">
+      <div class="text-h5 text-dark q-pl-sm">{{ foodItem.uniquename }}</div>
+      <FoodItemImage :foodItemImage="foodItemImage" :size="150" />
+    </q-item-section>
+    <q-item-section top class="col-xs-3 q-mt-xl">
+      <FoodItemPrice
+        :label="`Минимальная цена продажи`"
+        :price="minimalSellPrice"
+        :date="minimalSellPriceDate"
+      />
+      <FoodItemPrice
+        :label="`Максимальная цена покупки`"
+        :price="maximumBuyPrice"
+        :date="maximumBuyPriceDate"
+        class="q-mt-md"
+      />
+    </q-item-section>
+    <q-item-section>
+      <FoodItemChart />
+    </q-item-section>
+  </q-item>
 </template>
 
 <script>
