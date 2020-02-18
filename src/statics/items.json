@@ -2,345 +2,309 @@
   "stew": [
     {
       "uniquename": "T4_MEAL_STEW",
-      "craftingrequirements": {
-        "craftingfocus": "77",
-        "craftresource": [
-          {
-            "uniquename": "T4_TURNIP",
-            "count": "4"
-          },
-          {
-            "uniquename": "T4_BREAD",
-            "count": "4"
-          },
-          {
-            "uniquename": "T4_MEAT",
-            "count": "8"
-          }
-        ]
-      }
+      "craftingFocus": "77",
+      "resourses": [
+        {
+          "uniquename": "T4_TURNIP",
+          "count": "4"
+        },
+        {
+          "uniquename": "T4_BREAD",
+          "count": "4"
+        },
+        {
+          "uniquename": "T4_MEAT",
+          "count": "8"
+        }
+      ]
     },
     {
       "uniquename": "T6_MEAL_STEW",
-      "craftingrequirements": {
-        "craftingfocus": "231",
-        "craftresource": [
-          {
-            "uniquename": "T6_POTATO",
-            "count": "12"
-          },
-          {
-            "uniquename": "T4_BREAD",
-            "count": "12"
-          },
-          {
-            "uniquename": "T6_MEAT",
-            "count": "24"
-          }
-        ]
-      }
+      "craftingFocus": "231",
+      "resourses": [
+        {
+          "uniquename": "T6_POTATO",
+          "count": "12"
+        },
+        {
+          "uniquename": "T4_BREAD",
+          "count": "12"
+        },
+        {
+          "uniquename": "T6_MEAT",
+          "count": "24"
+        }
+      ]
     },
     {
       "uniquename": "T8_MEAL_STEW",
-      "craftingrequirements": {
-        "craftingfocus": "693",
-        "craftresource": [
-          {
-            "uniquename": "T8_PUMPKIN",
-            "count": "36"
-          },
-          {
-            "uniquename": "T4_BREAD",
-            "count": "36"
-          },
-          {
-            "uniquename": "T8_MEAT",
-            "count": "72"
-          }
-        ]
-      }
+      "craftingFocus": "693",
+      "resourses": [
+        {
+          "uniquename": "T8_PUMPKIN",
+          "count": "36"
+        },
+        {
+          "uniquename": "T4_BREAD",
+          "count": "36"
+        },
+        {
+          "uniquename": "T8_MEAT",
+          "count": "72"
+        }
+      ]
     }
   ],
   "sandwich": [
     {
       "uniquename": "T4_MEAL_SANDWICH",
-      "craftingrequirements": {
-        "craftingfocus": "70",
-        "craftresource": [
-          {
-            "uniquename": "T4_BREAD",
-            "count": "4"
-          },
-          {
-            "uniquename": "T4_MEAT",
-            "count": "8"
-          },
-          {
-            "uniquename": "T4_BUTTER",
-            "count": "2"
-          }
-        ]
-      }
+      "craftingFocus": "70",
+      "resourses": [
+        {
+          "uniquename": "T4_BREAD",
+          "count": "4"
+        },
+        {
+          "uniquename": "T4_MEAT",
+          "count": "8"
+        },
+        {
+          "uniquename": "T4_BUTTER",
+          "count": "2"
+        }
+      ]
     },
     {
       "uniquename": "T6_MEAL_SANDWICH",
-      "craftingrequirements": {
-        "craftingfocus": "210",
-        "craftresource": [
-          {
-            "uniquename": "T4_BREAD",
-            "count": "12"
-          },
-          {
-            "uniquename": "T6_MEAT",
-            "count": "24"
-          },
-          {
-            "uniquename": "T6_BUTTER",
-            "count": "6"
-          }
-        ]
-      }
+      "craftingFocus": "210",
+      "resourses": [
+        {
+          "uniquename": "T4_BREAD",
+          "count": "12"
+        },
+        {
+          "uniquename": "T6_MEAT",
+          "count": "24"
+        },
+        {
+          "uniquename": "T6_BUTTER",
+          "count": "6"
+        }
+      ]
     },
     {
       "uniquename": "T8_MEAL_SANDWICH",
-      "craftingrequirements": {
-        "craftingfocus": "630",
-        "craftresource": [
-          {
-            "uniquename": "T4_BREAD",
-            "count": "36"
-          },
-          {
-            "uniquename": "T8_MEAT",
-            "count": "72"
-          },
-          {
-            "uniquename": "T8_BUTTER",
-            "count": "18"
-          }
-        ]
-      }
+      "craftingFocus": "630",
+      "resourses": [
+        {
+          "uniquename": "T4_BREAD",
+          "count": "36"
+        },
+        {
+          "uniquename": "T8_MEAT",
+          "count": "72"
+        },
+        {
+          "uniquename": "T8_BUTTER",
+          "count": "18"
+        }
+      ]
     }
   ],
   "omelette": [
     {
       "uniquename": "T3_MEAL_OMELETTE",
-      "craftingrequirements": {
-        "craftingfocus": "63",
-        "craftresource": [
-          {
-            "uniquename": "T3_WHEAT",
-            "count": "4"
-          },
-          {
-            "uniquename": "T3_MEAT",
-            "count": "8"
-          },
-          {
-            "uniquename": "T3_EGG",
-            "count": "2"
-          }
-        ]
-      }
+      "craftingFocus": "63",
+      "resourses": [
+        {
+          "uniquename": "T3_WHEAT",
+          "count": "4"
+        },
+        {
+          "uniquename": "T3_MEAT",
+          "count": "8"
+        },
+        {
+          "uniquename": "T3_EGG",
+          "count": "2"
+        }
+      ]
     },
     {
       "uniquename": "T5_MEAL_OMELETTE",
-      "craftingrequirements": {
-        "craftingfocus": "190",
-        "craftresource": [
-          {
-            "uniquename": "T5_CABBAGE",
-            "count": "12"
-          },
-          {
-            "uniquename": "T5_MEAT",
-            "count": "24"
-          },
-          {
-            "uniquename": "T5_EGG",
-            "count": "6"
-          }
-        ]
-      }
+      "craftingFocus": "190",
+      "resourses": [
+        {
+          "uniquename": "T5_CABBAGE",
+          "count": "12"
+        },
+        {
+          "uniquename": "T5_MEAT",
+          "count": "24"
+        },
+        {
+          "uniquename": "T5_EGG",
+          "count": "6"
+        }
+      ]
     },
     {
       "uniquename": "T7_MEAL_OMELETTE",
-      "craftingrequirements": {
-        "craftingfocus": "571",
-        "craftresource": [
-          {
-            "uniquename": "T7_CORN",
-            "count": "36"
-          },
-          {
-            "uniquename": "T7_MEAT",
-            "count": "72"
-          },
-          {
-            "uniquename": "T5_EGG",
-            "count": "18"
-          }
-        ]
-      }
+      "craftingFocus": "571",
+      "resourses": [
+        {
+          "uniquename": "T7_CORN",
+          "count": "36"
+        },
+        {
+          "uniquename": "T7_MEAT",
+          "count": "72"
+        },
+        {
+          "uniquename": "T5_EGG",
+          "count": "18"
+        }
+      ]
     }
   ],
   "pie": [
     {
       "uniquename": "T3_MEAL_PIE",
-      "craftingrequirements": {
-        "craftingfocus": "66",
-        "craftresource": [
-          {
-            "uniquename": "T3_WHEAT",
-            "count": "2"
-          },
-          {
-            "uniquename": "T3_FLOUR",
-            "count": "4"
-          },
-          {
-            "uniquename": "T3_MEAT",
-            "count": "8"
-          }
-        ]
-      }
+      "craftingFocus": "66",
+      "resourses": [
+        {
+          "uniquename": "T3_WHEAT",
+          "count": "2"
+        },
+        {
+          "uniquename": "T3_FLOUR",
+          "count": "4"
+        },
+        {
+          "uniquename": "T3_MEAT",
+          "count": "8"
+        }
+      ]
     },
     {
       "uniquename": "T5_MEAL_PIE",
-      "craftingrequirements": {
-        "craftingfocus": "223",
-        "craftresource": [
-          {
-            "uniquename": "T5_CABBAGE",
-            "count": "6"
-          },
-          {
-            "uniquename": "T3_FLOUR",
-            "count": "12"
-          },
-          {
-            "uniquename": "T5_MEAT",
-            "count": "24"
-          },
-          {
-            "uniquename": "T4_MILK",
-            "count": "6"
-          }
-        ]
-      }
+      "craftingFocus": "223",
+      "resourses": [
+        {
+          "uniquename": "T5_CABBAGE",
+          "count": "6"
+        },
+        {
+          "uniquename": "T3_FLOUR",
+          "count": "12"
+        },
+        {
+          "uniquename": "T5_MEAT",
+          "count": "24"
+        },
+        {
+          "uniquename": "T4_MILK",
+          "count": "6"
+        }
+      ]
     },
     {
       "uniquename": "T7_MEAL_PIE",
-      "craftingrequirements": {
-        "craftingfocus": "669",
-        "craftresource": [
-          {
-            "uniquename": "T7_CORN",
-            "count": "18"
-          },
-          {
-            "uniquename": "T3_FLOUR",
-            "count": "36"
-          },
-          {
-            "uniquename": "T7_MEAT",
-            "count": "72"
-          },
-          {
-            "uniquename": "T6_MILK",
-            "count": "18"
-          }
-        ]
-      }
+      "craftingFocus": "669",
+      "resourses": [
+        {
+          "uniquename": "T7_CORN",
+          "count": "18"
+        },
+        {
+          "uniquename": "T3_FLOUR",
+          "count": "36"
+        },
+        {
+          "uniquename": "T7_MEAT",
+          "count": "72"
+        },
+        {
+          "uniquename": "T6_MILK",
+          "count": "18"
+        }
+      ]
     }
   ],
   "salad": [
     {
       "uniquename": "T2_MEAL_SALAD",
-      "craftingrequirements": {
-        "craftingfocus": "67",
-        "craftresource": [
-          {
-            "uniquename": "T2_BEAN",
-            "count": "8"
-          },
-          {
-            "uniquename": "T1_CARROT",
-            "count": "8"
-          }
-        ]
-      }
+      "craftingFocus": "67",
+      "resourses": [
+        {
+          "uniquename": "T2_BEAN",
+          "count": "8"
+        },
+        {
+          "uniquename": "T1_CARROT",
+          "count": "8"
+        }
+      ]
     },
     {
       "uniquename": "T4_MEAL_SALAD",
-      "craftingrequirements": {
-        "craftingfocus": "200",
-        "craftresource": [
-          {
-            "uniquename": "T4_TURNIP",
-            "count": "24"
-          },
-          {
-            "uniquename": "T3_WHEAT",
-            "count": "24"
-          }
-        ]
-      }
+      "craftingFocus": "200",
+      "resourses": [
+        {
+          "uniquename": "T4_TURNIP",
+          "count": "24"
+        },
+        {
+          "uniquename": "T3_WHEAT",
+          "count": "24"
+        }
+      ]
     },
     {
       "uniquename": "T6_MEAL_SALAD",
-      "craftingrequirements": {
-        "craftingfocus": "599",
-        "craftresource": [
-          {
-            "uniquename": "T6_POTATO",
-            "count": "72"
-          },
-          {
-            "uniquename": "T5_CABBAGE",
-            "count": "72"
-          }
-        ]
-      }
+      "craftingFocus": "599",
+      "resourses": [
+        {
+          "uniquename": "T6_POTATO",
+          "count": "72"
+        },
+        {
+          "uniquename": "T5_CABBAGE",
+          "count": "72"
+        }
+      ]
     }
   ],
   "soup": [
     {
       "uniquename": "T1_MEAL_SOUP",
-      "craftingrequirements": {
-        "craftingfocus": "67",
-        "craftresource": [
-          {
-            "uniquename": "T1_CARROT",
-            "count": "16"
-          }
-        ]
-      }
+      "craftingFocus": "67",
+      "resourses": [
+        {
+          "uniquename": "T1_CARROT",
+          "count": "16"
+        }
+      ]
     },
     {
       "uniquename": "T3_MEAL_SOUP",
-      "craftingrequirements": {
-        "craftingfocus": "200",
-        "craftresource": [
-          {
-            "uniquename": "T3_WHEAT",
-            "count": "48"
-          }
-        ]
-      }
+      "craftingFocus": "200",
+      "resourses": [
+        {
+          "uniquename": "T3_WHEAT",
+          "count": "48"
+        }
+      ]
     },
     {
       "uniquename": "T5_MEAL_SOUP",
-      "craftingrequirements": {
-        "craftingfocus": "599",
-        "craftresource": [
-          {
-            "uniquename": "T5_CABBAGE",
-            "count": "144"
-          }
-        ]
-      }
+      "craftingFocus": "599",
+      "resourses": [
+        {
+          "uniquename": "T5_CABBAGE",
+          "count": "144"
+        }
+      ]
     }
   ]
 }

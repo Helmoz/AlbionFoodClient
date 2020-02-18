@@ -1,3 +1,10 @@
+const path = require('path')
+
+function extendWebpackAliases(cfg) {
+  cfg.resolve.alias['~'] = __dirname
+  cfg.resolve.alias['@'] = path.resolve(__dirname, 'src')
+}
+
 module.exports = function(ctx) {
   return {
     boot: ['axios', 'composition-api'],
@@ -17,7 +24,7 @@ module.exports = function(ctx) {
       components: [],
       directives: [],
 
-      plugins: []
+      plugins: ['Loading']
     },
 
     supportIE: false,
@@ -31,7 +38,9 @@ module.exports = function(ctx) {
       // preloadChunks: false,
       // extractCSS: false,
 
-      extendWebpack(cfg) {}
+      extendWebpack(cfg) {
+        extendWebpackAliases(cfg)
+      }
     },
 
     devServer: {

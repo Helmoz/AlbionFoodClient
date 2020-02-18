@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import { useStore } from '../composition/useStore'
-import { useCraftSettings } from '../composition/CraftSettings'
+import { useStore } from '@/composition/useStore'
+import { useCraftSettings } from '@/composition/CraftSettings'
 
 export default {
   setup() {

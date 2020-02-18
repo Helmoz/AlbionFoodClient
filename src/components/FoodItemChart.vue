@@ -10,8 +10,8 @@ import 'echarts/lib/component/legend'
 import theme from '../assets/chart-theme.json'
 ECharts.registerTheme('custom', theme)
 
-import { useStore } from '../composition/useStore'
-import { useFoodItemChart } from '../composition/FoodItemChart'
+import { useStore } from '@/composition/useStore'
+import { useFoodItemChart } from '@/composition/FoodItemChart'
 
 export default {
   components: {

@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import { useStore } from '../composition/useStore'
-import { useFoodType } from '../composition/FoodType'
+import { useStore } from '@/composition/useStore'
+import { useFoodType } from '@/composition/FoodType'
 
 export default {
   setup () {
