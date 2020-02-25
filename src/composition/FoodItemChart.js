@@ -1,56 +1,34 @@
-import { reactive, computed, watch, toRefs } from '@vue/composition-api'
+import { reactive, computed, toRefs } from '@vue/composition-api'
 
-import { computedMutation } from 'src/utils/storeGetter'
-import { getDefaultChart, groupSelector, countPriceSelector } from '@/utils/chart'
+import moment from 'moment'
 
-import linqer from '@siderite/linqer'
-import { useFetch } from '@/statics/async-function'
+import { getDefaultChart } from '../utils/chart'
 
 export function useFoodItemChart(store) {
-  const data = reactive({
-    historyData: null,
-    foodItem: computedMutation(store, 'foodType', 'foodItem', 'setFoodItem'),
-    city: computedMutation(store, 'craftSettings', 'city', 'setCity'),
-    option: computed(() => {
-      let chart = getDefaultChart()
+	const foodItemChartState = reactive({
+		foodItem: computed(() => store.state.foodItem.foodItem),
+		option: computed(() => {
+			let chart = getDefaultChart()
+			chart.xAxis.data = foodItemChartState.foodItem.history.data.timestamps.map(x => moment(x).format('DD.MM.YYYY'))
+			chart.series = []
+			chart.series.push({
+				name: 'Средняя цена',
+				type: 'line',
+				data: foodItemChartState.foodItem.history.data.prices_avg,
+				smooth: true,
+				areaStyle: {}
+			})
+			chart.series.push({
+				name: 'Продано',
+				type: 'line',
+				smooth: true,
+				yAxisIndex: 1,
+				data: foodItemChartState.foodItem.history.data.item_count
+			})
 
-      if (data.historyData) {
-        const grouped = linqer.Enumerable.from(data.historyData[0].data)
-          .groupBy(x => groupSelector(x.timestamp))
-          .select(item => countPriceSelector(item))
-          .skipLast(1)
-          .toArray()
+			return chart
+		})
+	})
 
-        chart.xAxis.data = grouped.map(x => x.key)
-        chart.series = []
-        chart.series.push({
-          name: 'Средняя цена',
-          type: 'line',
-          data: grouped.map(x => x.price),
-          smooth: true,
-          areaStyle: {}
-        })
-        chart.series.push({
-          name: 'Продано',
-          type: 'line',
-          smooth: true,
-          yAxisIndex: 1,
-          data: grouped.map(x => x.count)
-        })
-      }
-
-      return chart
-    })
-  })
-
-  watch([() => data.foodItem.uniquename, () => data.city], () => {
-    let currentDate = new Date()
-    currentDate.setDate(currentDate.getDate() - 14)
-    let formattedDate = currentDate.toISOString().substring(0, 10)
-    const url = `https://www.albion-online-data.com/api/v2/stats/history/${data.foodItem.uniquename}?locations=${data.city}&date=${formattedDate}&time-scale=6`
-    const { data: historyData } = useFetch(url)
-    data.historyData = historyData
-  })
-
-  return { ...toRefs(data) }
+	return { ...toRefs(foodItemChartState) }
 }

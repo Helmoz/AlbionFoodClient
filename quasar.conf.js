@@ -1,58 +1,62 @@
 const path = require('path')
 
 function extendWebpackAliases(cfg) {
-  cfg.resolve.alias['~'] = __dirname
-  cfg.resolve.alias['@'] = path.resolve(__dirname, 'src')
+	cfg.resolve.alias['~'] = __dirname
+	cfg.resolve.alias['@'] = path.resolve(__dirname, 'src')
 }
 
 module.exports = function(ctx) {
-  return {
-    boot: ['axios', 'composition-api'],
+	return {
+		boot: ['axios', 'composition-api', 'moment'],
 
-    css: ['app.sass'],
+		css: ['app.sass'],
 
-    extras: [
-      'roboto-font', // optional, you are not bound to it
-      'material-icons' // optional, you are not bound to it
-    ],
+		extras: ['roboto-font', 'material-icons'],
 
-    framework: {
-      iconSet: 'material-icons',
-      lang: 'en-us',
-      all: 'auto',
+		framework: {
+			iconSet: 'material-icons',
+			lang: 'en-us',
+			all: 'auto',
 
-      components: [],
-      directives: [],
+			components: [],
+			directives: [],
 
-      plugins: ['Loading']
-    },
+			plugins: ['Loading']
+		},
 
-    supportIE: false,
+		supportIE: false,
 
-    build: {
-      scopeHoisting: true,
-      vueRouterMode: 'history',
-      showProgress: true,
-      gzip: false,
-      analyze: false,
-      // preloadChunks: false,
-      // extractCSS: false,
+		build: {
+			scopeHoisting: true,
+			vueRouterMode: 'history',
+			showProgress: true,
+			gzip: false,
+			analyze: false,
 
-      extendWebpack(cfg) {
-        extendWebpackAliases(cfg)
-      }
-    },
+			extendWebpack(cfg) {
+				extendWebpackAliases(cfg),
+					cfg.module.rules.push({
+						enforce: 'pre',
+						test: /\.(js|vue)$/,
+						loader: 'eslint-loader',
+						exclude: /node_modules/,
+						options: {
+							formatter: require('eslint').CLIEngine.getFormatter('stylish')
+						}
+					})
+			}
+		},
 
-    devServer: {
-      https: false,
-      port: 8080,
-      open: true
-    },
+		devServer: {
+			https: false,
+			port: 8080,
+			open: true
+		},
 
-    animations: [],
+		animations: [],
 
-    ssr: {
-      pwa: false
-    }
-  }
+		ssr: {
+			pwa: false
+		}
+	}
 }

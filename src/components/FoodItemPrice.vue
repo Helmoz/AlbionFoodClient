@@ -1,23 +1,20 @@
 <template>
-  <q-field outlined :label="label" stack-label bottom-slots>
-    <template v-slot:hint>
-      <div class="text-right">{{ date }}</div>
-    </template>
-    <template v-slot:control>
-      <span>{{ price }}</span>
-    </template>
-  </q-field>
+	<q-field outlined :label="label" stack-label bottom-slots>
+		<template v-slot:hint>
+			<div class="text-right">обновлена {{ date | moment('from') }}</div>
+		</template>
+		<template v-slot:control>
+			<span>{{ price }}</span>
+		</template>
+	</q-field>
 </template>
 
 <script>
-export default {
-  props: {
-    label: String,
-    price: Number,
-    date: String
-  }
-}
+	export default {
+		props: {
+			label: String,
+			price: Number,
+			date: String
+		}
+	}
 </script>
-
-<style>
-</style>

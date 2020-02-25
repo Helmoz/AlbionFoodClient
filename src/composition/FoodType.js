@@ -1,21 +1,21 @@
 import { reactive, computed, ref, watch, toRefs } from '@vue/composition-api'
 
 import items from '@/statics/items.json'
-import { computedAction } from 'src/utils/storeGetter'
+import { computedMutation } from '../utils/storeGetter'
 
 export function useFoodType(store) {
-  const foodOptions = Object.keys(items)
+	const foodOptions = Object.keys(items)
 
-  const data = reactive({
-    foodType: ref(foodOptions[0]),
-    foodItems: computed(() => items[data.foodType]),
-    foodItem: computedAction(store, 'foodType', 'foodItem', 'setFoodItem')
-  })
+	const foodTypeState = reactive({
+		foodType: ref(foodOptions[0]),
+		foodItems: computed(() => items[foodTypeState.foodType]),
+		foodItem: computedMutation(store, 'foodItem', 'selectedfoodItem', 'setSelectedfoodItem')
+	})
 
-  watch(
-    () => data.foodType,
-    () => (data.foodItem = data.foodItems[0])
-  )
+	watch(
+		() => foodTypeState.foodType,
+		() => (foodTypeState.foodItem = foodTypeState.foodItems[0].name)
+	)
 
-  return { ...toRefs(data), foodOptions }
+	return { ...toRefs(foodTypeState), foodOptions }
 }

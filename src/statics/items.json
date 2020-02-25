@@ -1,55 +1,55 @@
 {
   "stew": [
     {
-      "uniquename": "T4_MEAL_STEW",
+      "name": "T4_MEAL_STEW",
       "craftingFocus": "77",
       "resourses": [
         {
-          "uniquename": "T4_TURNIP",
+          "name": "T4_TURNIP",
           "count": "4"
         },
         {
-          "uniquename": "T4_BREAD",
+          "name": "T4_BREAD",
           "count": "4"
         },
         {
-          "uniquename": "T4_MEAT",
+          "name": "T4_MEAT",
           "count": "8"
         }
       ]
     },
     {
-      "uniquename": "T6_MEAL_STEW",
+      "name": "T6_MEAL_STEW",
       "craftingFocus": "231",
       "resourses": [
         {
-          "uniquename": "T6_POTATO",
+          "name": "T6_POTATO",
           "count": "12"
         },
         {
-          "uniquename": "T4_BREAD",
+          "name": "T4_BREAD",
           "count": "12"
         },
         {
-          "uniquename": "T6_MEAT",
+          "name": "T6_MEAT",
           "count": "24"
         }
       ]
     },
     {
-      "uniquename": "T8_MEAL_STEW",
+      "name": "T8_MEAL_STEW",
       "craftingFocus": "693",
       "resourses": [
         {
-          "uniquename": "T8_PUMPKIN",
+          "name": "T8_PUMPKIN",
           "count": "36"
         },
         {
-          "uniquename": "T4_BREAD",
+          "name": "T4_BREAD",
           "count": "36"
         },
         {
-          "uniquename": "T8_MEAT",
+          "name": "T8_MEAT",
           "count": "72"
         }
       ]
@@ -57,55 +57,55 @@
   ],
   "sandwich": [
     {
-      "uniquename": "T4_MEAL_SANDWICH",
+      "name": "T4_MEAL_SANDWICH",
       "craftingFocus": "70",
       "resourses": [
         {
-          "uniquename": "T4_BREAD",
+          "name": "T4_BREAD",
           "count": "4"
         },
         {
-          "uniquename": "T4_MEAT",
+          "name": "T4_MEAT",
           "count": "8"
         },
         {
-          "uniquename": "T4_BUTTER",
+          "name": "T4_BUTTER",
           "count": "2"
         }
       ]
     },
     {
-      "uniquename": "T6_MEAL_SANDWICH",
+      "name": "T6_MEAL_SANDWICH",
       "craftingFocus": "210",
       "resourses": [
         {
-          "uniquename": "T4_BREAD",
+          "name": "T4_BREAD",
           "count": "12"
         },
         {
-          "uniquename": "T6_MEAT",
+          "name": "T6_MEAT",
           "count": "24"
         },
         {
-          "uniquename": "T6_BUTTER",
+          "name": "T6_BUTTER",
           "count": "6"
         }
       ]
     },
     {
-      "uniquename": "T8_MEAL_SANDWICH",
+      "name": "T8_MEAL_SANDWICH",
       "craftingFocus": "630",
       "resourses": [
         {
-          "uniquename": "T4_BREAD",
+          "name": "T4_BREAD",
           "count": "36"
         },
         {
-          "uniquename": "T8_MEAT",
+          "name": "T8_MEAT",
           "count": "72"
         },
         {
-          "uniquename": "T8_BUTTER",
+          "name": "T8_BUTTER",
           "count": "18"
         }
       ]
@@ -113,55 +113,55 @@
   ],
   "omelette": [
     {
-      "uniquename": "T3_MEAL_OMELETTE",
+      "name": "T3_MEAL_OMELETTE",
       "craftingFocus": "63",
       "resourses": [
         {
-          "uniquename": "T3_WHEAT",
+          "name": "T3_WHEAT",
           "count": "4"
         },
         {
-          "uniquename": "T3_MEAT",
+          "name": "T3_MEAT",
           "count": "8"
         },
         {
-          "uniquename": "T3_EGG",
+          "name": "T3_EGG",
           "count": "2"
         }
       ]
     },
     {
-      "uniquename": "T5_MEAL_OMELETTE",
+      "name": "T5_MEAL_OMELETTE",
       "craftingFocus": "190",
       "resourses": [
         {
-          "uniquename": "T5_CABBAGE",
+          "name": "T5_CABBAGE",
           "count": "12"
         },
         {
-          "uniquename": "T5_MEAT",
+          "name": "T5_MEAT",
           "count": "24"
         },
         {
-          "uniquename": "T5_EGG",
+          "name": "T5_EGG",
           "count": "6"
         }
       ]
     },
     {
-      "uniquename": "T7_MEAL_OMELETTE",
+      "name": "T7_MEAL_OMELETTE",
       "craftingFocus": "571",
       "resourses": [
         {
-          "uniquename": "T7_CORN",
+          "name": "T7_CORN",
           "count": "36"
         },
         {
-          "uniquename": "T7_MEAT",
+          "name": "T7_MEAT",
           "count": "72"
         },
         {
-          "uniquename": "T5_EGG",
+          "name": "T5_EGG",
           "count": "18"
         }
       ]
@@ -169,63 +169,63 @@
   ],
   "pie": [
     {
-      "uniquename": "T3_MEAL_PIE",
+      "name": "T3_MEAL_PIE",
       "craftingFocus": "66",
       "resourses": [
         {
-          "uniquename": "T3_WHEAT",
+          "name": "T3_WHEAT",
           "count": "2"
         },
         {
-          "uniquename": "T3_FLOUR",
+          "name": "T3_FLOUR",
           "count": "4"
         },
         {
-          "uniquename": "T3_MEAT",
+          "name": "T3_MEAT",
           "count": "8"
         }
       ]
     },
     {
-      "uniquename": "T5_MEAL_PIE",
+      "name": "T5_MEAL_PIE",
       "craftingFocus": "223",
       "resourses": [
         {
-          "uniquename": "T5_CABBAGE",
+          "name": "T5_CABBAGE",
           "count": "6"
         },
         {
-          "uniquename": "T3_FLOUR",
+          "name": "T3_FLOUR",
           "count": "12"
         },
         {
-          "uniquename": "T5_MEAT",
+          "name": "T5_MEAT",
           "count": "24"
         },
         {
-          "uniquename": "T4_MILK",
+          "name": "T4_MILK",
           "count": "6"
         }
       ]
     },
     {
-      "uniquename": "T7_MEAL_PIE",
+      "name": "T7_MEAL_PIE",
       "craftingFocus": "669",
       "resourses": [
         {
-          "uniquename": "T7_CORN",
+          "name": "T7_CORN",
           "count": "18"
         },
         {
-          "uniquename": "T3_FLOUR",
+          "name": "T3_FLOUR",
           "count": "36"
         },
         {
-          "uniquename": "T7_MEAT",
+          "name": "T7_MEAT",
           "count": "72"
         },
         {
-          "uniquename": "T6_MILK",
+          "name": "T6_MILK",
           "count": "18"
         }
       ]
@@ -233,43 +233,43 @@
   ],
   "salad": [
     {
-      "uniquename": "T2_MEAL_SALAD",
+      "name": "T2_MEAL_SALAD",
       "craftingFocus": "67",
       "resourses": [
         {
-          "uniquename": "T2_BEAN",
+          "name": "T2_BEAN",
           "count": "8"
         },
         {
-          "uniquename": "T1_CARROT",
+          "name": "T1_CARROT",
           "count": "8"
         }
       ]
     },
     {
-      "uniquename": "T4_MEAL_SALAD",
+      "name": "T4_MEAL_SALAD",
       "craftingFocus": "200",
       "resourses": [
         {
-          "uniquename": "T4_TURNIP",
+          "name": "T4_TURNIP",
           "count": "24"
         },
         {
-          "uniquename": "T3_WHEAT",
+          "name": "T3_WHEAT",
           "count": "24"
         }
       ]
     },
     {
-      "uniquename": "T6_MEAL_SALAD",
+      "name": "T6_MEAL_SALAD",
       "craftingFocus": "599",
       "resourses": [
         {
-          "uniquename": "T6_POTATO",
+          "name": "T6_POTATO",
           "count": "72"
         },
         {
-          "uniquename": "T5_CABBAGE",
+          "name": "T5_CABBAGE",
           "count": "72"
         }
       ]
@@ -277,31 +277,31 @@
   ],
   "soup": [
     {
-      "uniquename": "T1_MEAL_SOUP",
+      "name": "T1_MEAL_SOUP",
       "craftingFocus": "67",
       "resourses": [
         {
-          "uniquename": "T1_CARROT",
+          "name": "T1_CARROT",
           "count": "16"
         }
       ]
     },
     {
-      "uniquename": "T3_MEAL_SOUP",
+      "name": "T3_MEAL_SOUP",
       "craftingFocus": "200",
       "resourses": [
         {
-          "uniquename": "T3_WHEAT",
+          "name": "T3_WHEAT",
           "count": "48"
         }
       ]
     },
     {
-      "uniquename": "T5_MEAL_SOUP",
+      "name": "T5_MEAL_SOUP",
       "craftingFocus": "599",
       "resourses": [
         {
-          "uniquename": "T5_CABBAGE",
+          "name": "T5_CABBAGE",
           "count": "144"
         }
       ]
